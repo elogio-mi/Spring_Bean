@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+
+http://springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 주석 blocking > ctrl+/ | 해제 blocking > ctrl+| -->
+
+<bean id='t1' class='info.example.beans.MyBean1'/>
+
+
+
+</beans>

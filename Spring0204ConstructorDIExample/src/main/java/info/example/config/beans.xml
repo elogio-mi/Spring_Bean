@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+
+http://springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+
+
+	<!-- 객체가생성: xml을로딩할때 -->
+	<!-- id 속성을사용하면 getBean 메서드를통해객체의주소값을받아사용할수있음 -->
+	<!-- 생성된객체는더이상생성되지않는다. Singleton -->
+	<bean id="b1" class='info.example.beans.MyBean1'
+		lazy-init="true"  />
+
+
+	<!-- lazy-init : true - xml을로딩할때객체가생성되지않고 (생략하면 false) -->
+	<!-- getBean 메서드를호출할때객체가생성되며, singleton이기때문에객체는한번만생성됨 -->
+	<bean id="b2" class='info.example.beans.MyBean1' lazy-init='true'>
+		<constructor-arg value = '100' type = 'int'/>
+	</bean>
+
+	<!-- scope : prototype - xml을로딩할때객체가생성되지않고, -->
+	<!-- getBean 메서드를호출할때마다새로운객체를생성해서주소를반환함 -->
+	<bean id="b3" class='info.example.beans.MyBean1' lazy-init="true">
+		<constructor-arg value = '200' type = 'int'/>
+		<constructor-arg value = '22.22' type = 'double'/>
+		<constructor-arg value = '안녕하세요' type = 'java.lang.String'/>
+	</bean>
+	
+	<bean id='data_bean' class='info.example.beans.DataBean' scope='prototype'/>
+	<bean id="b4" class='info.example.beans.MyBean2' lazy-init='true'>
+	
+	<constructor-arg ref='data_bean'/>
+	<constructor-arg ref='data_bean'/>
+	
+	<!-- 
+	<constructor-arg>
+		 	<bean class = 'info.example.beans.DataBean'/>
+		 </constructor-arg>
+		 <constructor-arg>
+		 	<bean class = 'info.example.beans.DataBean'/>
+		 </constructor-arg>
+	 -->
+		
+		 
+		 
+		 
+		 
+	</bean>
+		
+</beans>

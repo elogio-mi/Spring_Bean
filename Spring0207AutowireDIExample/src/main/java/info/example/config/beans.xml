@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+
+http://springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 직접주입 -->
+	<bean id='data_bean1' class='info.example.beans.DataBean1' scope='prototype'/>
+	<bean id='obj1' class='info.example.beans.MyBean1'>
+		<property name="data1" ref="data_bean1"/>
+		<property name="data2" ref="data_bean1"/>
+	</bean>
+	
+	<!-- 자동주입 빈 객체의 변수명과 정의된 id값이 일치할 때, -->
+	<!-- 위의 직접주입과 비교시, 위는 property를 이용한 직접주입 란을 작성했지만 이건 아님. -->
+	<bean id='obj2' class='info.example.beans.MyBean1' autowire='byName'/>
+	<bean id='data1' class='info.example.beans.DataBean1'/>
+	<bean id='data2' class='info.example.beans.DataBean1'/>
+	
+	
+	<!-- 자동주입 빈 객체의 property 타입과 정의된 빈 타입이 일치할 때,-->
+	<bean id='data_bean2' class='info.example.beans.DataBean2'/>
+	<bean id='obj3' class='info.example.beans.MyBean2' autowire='byType'/>
+	
+	<!-- 자동주입 생성자에 의한. int랑 string은 직접주입해야함. 생성자에 맞게 constructor-arg태그로 직접주입. -->
+	<bean id='obj5' class='info.example.beans.MyBean3' autowire='constructor'>
+		<constructor-arg value = '100' type ='int' index = '0'/>
+		<constructor-arg value = '문자열' type ='String' index = '1'/>
+	</bean>	
+</beans>
