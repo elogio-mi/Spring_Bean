@@ -15,6 +15,7 @@ public class MainClass {
 	public static void test1() {
 		ClassPathResource res = 
 				new ClassPathResource("info/example/config/beans.xml");
+		
 		XmlBeanFactory factory = 
 				new XmlBeanFactory(res);
 		
