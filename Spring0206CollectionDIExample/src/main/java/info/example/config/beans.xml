@@ -27,6 +27,7 @@ http://springframework.org/schema/beans/spring-beans.xsd">
 			</list>
 		</property>
 		<property name = 'list3'>
+		<!-- Set은 기본적으로 중복을 허용하지 않은 컬렉션이다. -->
 			<set>
 				<bean class ='info.example.beans.DataBean'/>
 				<bean class ='info.example.beans.DataBean'/>

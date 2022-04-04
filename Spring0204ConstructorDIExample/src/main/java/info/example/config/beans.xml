@@ -35,6 +35,8 @@ http://springframework.org/schema/beans/spring-beans.xsd">
 	</bean>
 	
 	<bean id='data_bean' class='info.example.beans.DataBean' scope='prototype'/>
+	
+	
 	<bean id="b4" class='info.example.beans.MyBean2' lazy-init='true'>
 	
 	<constructor-arg ref='data_bean'/>
