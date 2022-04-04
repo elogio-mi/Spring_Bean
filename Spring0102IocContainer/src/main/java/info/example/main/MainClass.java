@@ -23,7 +23,7 @@ public class MainClass {
 		
 		MyBean1 b1 = factory.getBean("t1", MyBean1.class);
 		//이러한 형식으로 객체를 생성함.
-		// 하지만 퇴색된 방법으로 이런 방식으로도 쓸 수 있다라고 알아두면 됨.
+		// 하지만 퇴색된 방법으로, 이런 방식으로도 쓸 수 있다라고 알아두면 됨.
 		System.out.println("b1객체정보(주소값): " + b1);
 		//MyBean2 t1 = factory.getBean("t1", MyBean.class);
 		//System.out.println("t2객체정보: " + b2);

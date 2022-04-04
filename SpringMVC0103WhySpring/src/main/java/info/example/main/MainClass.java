@@ -11,7 +11,7 @@ public class MainClass {
 		ClassPathXmlApplicationContext ctx = 
 				new ClassPathXmlApplicationContext("info/example/config/beans.xml");
 		
-		// beans.xml에정의한 bean 객체의주소값을가져온다.
+		// beans.xml에서 정의한 bean 객체의주소값을가져온다.
 		YourPhone phone1 =  (YourPhone) ctx.getBean("phone");
 		callMethod(phone1);
 		

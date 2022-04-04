@@ -18,6 +18,7 @@ default-init-method="default_init" default-destroy-method="default_destroy">
 <!-- 객체가생성: xml을로딩할때 -->
 <!-- id 속성을사용하면 getBean 메서드를통해객체의주소값을받아사용할수있음 -->
 <!-- 생성된객체는더이상생성되지않는다. Singleton -->
+<!-- init-method: 시작메소드 destroy-method: 종료메소드 -->
 <bean id="b1" class='info.example.beans.MyBean1' lazy-init="true" init-method="bean1_init" destroy-method="bean1_destroy"/>
 
 

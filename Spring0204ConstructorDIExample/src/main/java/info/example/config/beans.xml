@@ -14,7 +14,7 @@ http://springframework.org/schema/beans/spring-beans.xsd">
 
 
 	<!-- 객체가생성: xml을로딩할때 -->
-	<!-- id 속성을사용하면 getBean 메서드를통해객체의주소값을받아사용할수있음 -->
+	<!-- id 속성을사용해야만 getBean 메서드를통해객체의주소값을받아사용할수있음 -->
 	<!-- 생성된객체는더이상생성되지않는다. Singleton -->
 	<bean id="b1" class='info.example.beans.MyBean1'
 		lazy-init="true"  />
