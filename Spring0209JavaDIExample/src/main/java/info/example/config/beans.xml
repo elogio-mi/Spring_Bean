@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+
+http://springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	<bean id = 'xml1' class='info.example.beans.MyBean1' lazy-init="true">
+		<constructor-arg value = '100' type = 'int' index = '0'/>
+		<constructor-arg value = '문자열1' type = 'String' index = '1'/>
+		<constructor-arg ref='data_bean1' index = '2'/>	
+	</bean>
+	
+	<bean id = 'xml2' class='info.example.beans.MyBean1' lazy-init="true">
+		<property name = 'data1' value = '100'/>
+		<property name = 'data2' value = '문자열1'/>
+		<property name = 'data3' ref='data_bean1'/>
+	</bean>
+	
+</beans>
