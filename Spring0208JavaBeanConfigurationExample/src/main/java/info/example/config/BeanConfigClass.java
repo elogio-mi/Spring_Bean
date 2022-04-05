@@ -13,7 +13,7 @@ public class BeanConfigClass {
 			MyBean1 t1 = new MyBean1();
 			return t1;
 		}
-		
+		//bean 이름을 새롭게 정의
 		@Bean(name="java12")
 		public MyBean1 java11() {
 			MyBean1 t1 = new MyBean1();

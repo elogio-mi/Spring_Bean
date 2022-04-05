@@ -15,10 +15,19 @@ http://springframework.org/schema/beans/spring-beans.xsd">
 		<constructor-arg ref='data_bean1' index = '2'/>	
 	</bean>
 	
+	
+	<bean id = 'data_bean1' class='info.example.beans.DataBean1'/>
 	<bean id = 'xml2' class='info.example.beans.MyBean1' lazy-init="true">
-		<property name = 'data1' value = '100'/>
-		<property name = 'data2' value = '문자열1'/>
+		<property name = 'data1' value = '200'/>
+		<property name = 'data2' value = '문자열2'/>
 		<property name = 'data3' ref='data_bean1'/>
 	</bean>
+	
+	<bean id ='data1' class = 'info.example.beans.DataBean2'/>
+	<bean id ='data2' class = 'info.example.beans.DataBean2'/>
+	<bean id = 'xml3' class='info.example.beans.MyBean2' lazy-init="true" autowire = 'byName'/>
+		
+	<bean class = 'info.example.beans.DataBean3'/>	
+	<bean id = 'xml4' class='info.example.beans.MyBean3' lazy-init="true" autowire = 'byType'/>
 	
 </beans>

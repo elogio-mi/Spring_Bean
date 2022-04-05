@@ -32,11 +32,13 @@ public class MainClass {
 		
 		MyBean1 java1 = ctx2.getBean("java1", MyBean1.class);
 		System.out.printf("java1.data1 : %s\n", java1);
+		
 		System.out.println("-----------------------------");
 		
 		
 		MyBean1 java12 = ctx2.getBean("java12", MyBean1.class);
 		System.out.printf("java12.data1 : %s\n", java12);
+		
 		System.out.println("----------------------------"); 
 		
 		ctx2.close();
