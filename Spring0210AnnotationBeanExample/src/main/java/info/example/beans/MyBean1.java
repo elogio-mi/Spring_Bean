@@ -9,7 +9,7 @@ public class MyBean1 {
 
 	private DataBean1 data2;
 	
-	@Autowired //setter 자동주입
+	@Autowired //setter 자동주입 - data_bean1
 	public void setData2(DataBean1 data2) {
 		this.data2 = data2;
 	}
@@ -17,6 +17,9 @@ public class MyBean1 {
 	@Autowired
 	private DataBean1 data3;
 	
+	//- @Autowired와 함께 사용한다.
+	//- @Autowired를 통한 자동 주입 시 같은 타입의 빈이 여러 개 정의되어 있으면 @Qualifier에 설정되어 있는 빈을 찾아 주입한다.
+	// byname과 비슷한 역할
 	
 	@Autowired
 	@Qualifier("obj4")
@@ -26,12 +29,14 @@ public class MyBean1 {
 	@Qualifier("obj5")
 	private DataBean2 data5;
 	
+	
+	//xml에 해당 빈이 있을때 실행.
 	@Autowired(required = false)
 	@Qualifier("obj6")
 	private DataBean2 data6;
 
 	
-	
+//	하단에 getter setter 메소드 
 	
 	
 	

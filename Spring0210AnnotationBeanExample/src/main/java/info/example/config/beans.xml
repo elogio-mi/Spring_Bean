@@ -10,12 +10,13 @@
 <!--       빈 설정을 XML 파일이 아닌 빈 클래스의 [애노테이션] @@@@ 을 검색해 반영-->
      <context:annotation-config/>
      
+     <bean class = 'info.example.beans.DataBean1'/>
      <bean id = 'xml1' class = 'info.example.beans.MyBean1'>
      	<property name = "data1" value = '100'/>
 <!--      	MyBean1의 생성자 주입 값.-->     
 	</bean>
      
-     <bean class = 'info.example.beans.DataBean1'/>
+     
      
      <bean id = 'obj4' class = 'info.example.beans.DataBean2'/>
      <bean id = 'obj5' class = 'info.example.beans.DataBean2'/>

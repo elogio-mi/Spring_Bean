@@ -13,6 +13,7 @@ public class MyBean2 {
 	private DataBean3 data3;
 	@Autowired
 	private DataBean4 data4;
+	
 	// ctx1 구문 실행할 때 주석처리 하도록. 나도 모르겠는데 걍 안하면 기본값 -> 0 , null 값 나옴
 	public MyBean2() {
 		
