@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Lazy;
 import info.example.beans.DataBean1;
 import info.example.beans.DataBean2;
 import info.example.beans.DataBean3;
+import info.example.beans.DataBean4;
 import info.example.beans.MyBean1;
 import info.example.beans.MyBean2;
 import info.example.beans.MyBean3;
@@ -20,6 +21,7 @@ public class BeanConfigClass {
 		return new MyBean1();
 	}
 	
+	//data_bean인 이유는 MyBean1의 autowire 속성 사용하기 위해서. 사실 이름만 잘 했음 필요도 없음.
 	@Bean
 	public DataBean1 data_bean1() {
 		return new DataBean1();
@@ -38,6 +40,17 @@ public class BeanConfigClass {
 	@Bean
 	public MyBean2 java2() {
 		return new MyBean2();
+	}
+	
+	
+	@Bean
+	public DataBean3 data3() {
+		return new DataBean3();
+	}
+	
+	@Bean
+	public DataBean4 data4() {
+		return new DataBean4();
 	}
 }
 		

@@ -30,6 +30,14 @@ public class MyBean1 {
 	@Qualifier("obj6")
 	private DataBean2 data6;
 
+	
+	
+	
+	
+	
+	
+	
+	
 	public int getData1() {
 		return data1;
 	}
