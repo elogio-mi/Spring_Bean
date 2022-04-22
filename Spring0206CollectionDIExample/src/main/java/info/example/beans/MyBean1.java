@@ -1,6 +1,9 @@
 package info.example.beans;
 
 import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
 
 public class MyBean1 {
 	private List<String> list1;
@@ -24,6 +27,53 @@ public class MyBean1 {
 	public void setList3(List<DataBean> list3) {
 		this.list3 = list3;
 	}
+	
+	
+	private Set<String> set1;
+	private Set<Integer> set2;
+	private Set<DataBean> set3;
+	
+	public Set<String> getSet1() {
+		return set1;
+	}
+	public void setSet1(Set<String> set1) {
+		this.set1 = set1;
+	}
+	public Set<Integer> getSet2() {
+		return set2;
+	}
+	public void setSet2(Set<Integer> set2) {
+		this.set2 = set2;
+	}
+	public Set<DataBean> getSet3() {
+		return set3;
+	}
+	public void setSet3(Set<DataBean> set3) {
+		this.set3 = set3;
+	}
+	
+	
+	private Map<String, Object> map1;
+	
+	public Map<String, Object> getMap1() {
+		return map1;
+	}
+	public void setMap1(Map<String, Object> map1) {
+		this.map1 = map1;
+	}
+
+
+	private Properties prop1;
+	
+	public Properties getProp1() {
+		return prop1;
+	}
+	public void setProp1(Properties prop1) {
+		this.prop1 = prop1;
+	}
+	
+ 	
+	
 	
 	
 }

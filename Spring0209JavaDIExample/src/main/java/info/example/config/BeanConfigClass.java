@@ -29,11 +29,12 @@ public class BeanConfigClass {
 		@Lazy
 		public MyBean1 java2() {
 			MyBean1 t1 = new MyBean1();
+			///setter 주입 시 
 			t1.setData1(200);
 			t1.setData2("문자열2");
 			t1.setData3(new DataBean1());
 			return t1;
-			//setter 주입 시
+			// 생성자 주입 시
 //			return new MyBean1(200, "문자열2", new DataBean1());
 		}
 		

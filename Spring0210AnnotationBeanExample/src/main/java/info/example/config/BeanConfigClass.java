@@ -21,7 +21,7 @@ public class BeanConfigClass {
 		return new MyBean1();
 	}
 	
-	//data_bean인 이유는 MyBean1의 autowire 속성 사용하기 위해서. 이름 아니였음 필요도 없음.
+	//data_bean인 이유는 MyBean1의 autowire 속성 사용하기 위해서. 그거 아니였음 필요도 없음.
 	@Bean
 	public DataBean1 data_bean1() {
 		return new DataBean1();

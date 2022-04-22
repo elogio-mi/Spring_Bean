@@ -19,6 +19,7 @@ http://springframework.org/schema/beans/spring-beans.xsd">
 				<value>문자열3</value>			
 			</list>
 		</property>
+		
 		<property name = 'list2'>
 			<list>
 				<value type='int'>100</value>
@@ -26,6 +27,7 @@ http://springframework.org/schema/beans/spring-beans.xsd">
 				<value type='int'>300</value>			
 			</list>
 		</property>
+		
 		<property name = 'list3'>
 		<!-- Set은 기본적으로 중복을 허용하지 않은 컬렉션이다. -->
 			<set>
@@ -46,6 +48,7 @@ http://springframework.org/schema/beans/spring-beans.xsd">
 				<value>문자열3</value>		
 			</set>
 		</property>
+		
 		<property name = 'set2'>
 			<set>
 				<value type='int'>100</value>
@@ -55,6 +58,7 @@ http://springframework.org/schema/beans/spring-beans.xsd">
 				<value type='int'>300</value>				
 			</set>
 		</property>
+		
 		<property name = 'set3'>
 			<set>
 				<bean class ='info.example.beans.DataBean'/>
@@ -87,17 +91,13 @@ http://springframework.org/schema/beans/spring-beans.xsd">
 		</property>
 		
 		<property name = 'prop1'>
-			<set>
-				<bean class ='info.example.beans.DataBean'/>
-				<bean class ='info.example.beans.DataBean'/>
-				<!--  ref 태그는 빈의 id로 빈을 찾는다. -->
-				<ref bean = 'data_bean'/>
-				<ref bean = 'data_bean'/>
-				<ref bean = 'data_bean'/>
-				<ref bean = 'data_bean'/>
-			</set>
+			<props>
+				<prop key = "p1"> prop 문자열 1</prop>
+				<prop key = "p2"> prop 문자열 2</prop>
+				<prop key = "p3"> prop 문자열 3</prop>
+			</props>
 		</property>
-		<!--  이어서 작성하기 ㅅㅂ.. -->
+
 		
 	</bean>
 		

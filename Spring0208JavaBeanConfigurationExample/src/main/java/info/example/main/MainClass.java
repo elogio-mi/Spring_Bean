@@ -6,8 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import info.example.beans.DataBean1;
 import info.example.beans.MyBean1;
-import info.example.beans.MyBean2;
-import info.example.beans.MyBean3;
+
 import info.example.config.BeanConfigClass;
 
 
