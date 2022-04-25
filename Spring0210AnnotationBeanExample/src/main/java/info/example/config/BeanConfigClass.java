@@ -37,10 +37,7 @@ public class BeanConfigClass {
 		return new DataBean2();
 	}
 	
-	@Bean
-	public MyBean2 java2() {
-		return new MyBean2();
-	}
+	
 	
 	
 	@Bean
@@ -51,6 +48,12 @@ public class BeanConfigClass {
 	@Bean
 	public DataBean4 data4() {
 		return new DataBean4();
+	}
+	
+	
+	@Bean
+	public MyBean2 java2() {
+		return new MyBean2();
 	}
 }
 		

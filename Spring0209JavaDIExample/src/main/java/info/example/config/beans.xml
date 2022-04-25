@@ -10,9 +10,9 @@ http://springframework.org/schema/beans/spring-beans.xsd">
 
 	
 	<bean id = 'xml1' class='info.example.beans.MyBean1' lazy-init="true">
-		<constructor-arg value = '100' type = 'int' index = '0'/>
-		<constructor-arg value = '문자열1' type = 'String' index = '1'/>
-		<constructor-arg ref='data_bean1' index = '2'/>	
+		<constructor-arg value = '100' type = 'int'/>
+		<constructor-arg value = '문자열1' type = 'String' />
+		<constructor-arg ref='data_bean1' />	
 	</bean>
 	
 	

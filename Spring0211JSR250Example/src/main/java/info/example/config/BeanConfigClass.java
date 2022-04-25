@@ -35,7 +35,7 @@ public class BeanConfigClass {
 			return new MyBean3();
 		}
 		
-		@Bean(autowire = Autowire.BY_NAME)
+		@Bean
 		@Lazy
 		public MyBean4 obj4() {
 			return new MyBean4();

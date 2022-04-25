@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>SpringMVC</groupId>
+  <artifactId>Spring0212ComponentExample</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+		<org.springframework-version>5.2.2.RELEASE</org.springframework-version>
+		<org.slf4j-version>1.7.30</org.slf4j-version>
+		<ch.qos.logback-version>1.2.3</ch.qos.logback-version>
+	</properties>
+
+	<!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
+
+
+	<!-- 프로젝트에서 서용할 라이브러리 정보 -->
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${org.slf4j-version}</version>
+		</dependency>
+		<!-- logback-classic -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${ch.qos.logback-version}</version>
+			<exclusions>
+				<!-- slf4j와 logback연결 -->
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+			<scope>runtime</scope> <!-- 실행중 로그를 볼수 있다. -->
+		</dependency>
+		<dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>javax.annotation-api</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+	</dependencies>
+  
+</project>

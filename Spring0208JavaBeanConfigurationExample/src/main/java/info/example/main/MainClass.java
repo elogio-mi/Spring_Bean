@@ -20,7 +20,8 @@ public class MainClass {
 		ClassPathXmlApplicationContext ctx1 = new ClassPathXmlApplicationContext("info/example/config/beans.xml");
 		System.out.println("-----------------------------");
 		
-		AnnotationConfigApplicationContext ctx2 = new AnnotationConfigApplicationContext(BeanConfigClass.class);
+		AnnotationConfigApplicationContext ctx2 = 
+				new AnnotationConfigApplicationContext(BeanConfigClass.class);
 		
 	
 		MyBean1 xml1 = ctx1.getBean("xml1", MyBean1.class);
