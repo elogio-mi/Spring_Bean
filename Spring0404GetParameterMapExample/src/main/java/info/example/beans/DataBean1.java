@@ -1,10 +1,10 @@
 package info.example.beans;
 
 public class DataBean1 {
+
 	private int data1;
 	private int data2;
 	private int [] data3;
-	
 	
 	public int getData1() {
 		return data1;

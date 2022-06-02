@@ -20,16 +20,15 @@ import info.example.beans.DataBean;
 public class TestController {
 	
 	
-	
 	@PostMapping("/test1")
-	public String test1(DataBean bean) {	
+	// public String test1(@ModelAttribute DataBean bean) {
+	public String test1(DataBean bean) {
 		return "test1";
 	}
 	
-//	@PostMapping("/test1")
-//	public String test1(@ModelAttribute("testData") DataBean bean) {	
-//		return "test1";
-//	}
-	
+	@PostMapping("/test2")
+	//@ModelAttribute(“지정이름”)방식으로 사용가능
+	public String test2(@ModelAttribute("testData") DataBean bean) {
+		return "test2";
+	}
 }
-

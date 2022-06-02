@@ -1,8 +1,10 @@
 package info.example.beans;
 
 public class DataBean {
+
 	private String data1;
 	private String data2;
+	
 	public String getData1() {
 		return data1;
 	}
@@ -15,6 +17,7 @@ public class DataBean {
 	public void setData2(String data2) {
 		this.data2 = data2;
 	}
+	
 	
 	
 	
