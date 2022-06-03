@@ -35,6 +35,25 @@ public class TestController {
 	}
 	
 	
+	@GetMapping("/test2")
+	public String test2(@ModelAttribute ("testBean") DataBean bean) {
+		
+		bean.setId(1);
+		bean.setName("홍길동동이");
+		bean.setPw("12435");
+		bean.setAddress_1("10532");
+		bean.setAddress_2("906608");
+		
+		return "test2";
+	}
+	
+	@PostMapping("/result")
+	//public String results(@ModelAttribute("empBean") DataBean bean) {
+	public String result(DataBean bean) {
+		
+		return "result";
+	}
+	
 	
 }
 

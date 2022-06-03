@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Spring0403GetParameter" path="/Spring0403GetParameter" reloadable="true" source="org.eclipse.jst.jee.server:Spring0403GetParameter"/><Context docBase="Spring0403GetParameterObjectExample" path="/Spring0403GetParameterObjectExample" reloadable="true" source="org.eclipse.jst.jee.server:Spring0403GetParameterObjectExample"/><Context docBase="Spring0405CommandObjectExample" path="/Spring0405CommandObjectExample" reloadable="true" source="org.eclipse.jst.jee.server:Spring0405CommandObjectExample"/></Host>
+      <Context docBase="Spring0403GetParameter" path="/Spring0403GetParameter" reloadable="true" source="org.eclipse.jst.jee.server:Spring0403GetParameter"/><Context docBase="Spring0403GetParameterObjectExample" path="/Spring0403GetParameterObjectExample" reloadable="true" source="org.eclipse.jst.jee.server:Spring0403GetParameterObjectExample"/><Context docBase="Spring0405CommandObjectExample" path="/Spring0405CommandObjectExample" reloadable="true" source="org.eclipse.jst.jee.server:Spring0405CommandObjectExample"/><Context docBase="Spring0406FormCustomTagExample" path="/Spring0406FormCustomTagExample" reloadable="true" source="org.eclipse.jst.jee.server:Spring0406FormCustomTagExample"/></Host>
     </Engine>
   </Service>
 </Server>
