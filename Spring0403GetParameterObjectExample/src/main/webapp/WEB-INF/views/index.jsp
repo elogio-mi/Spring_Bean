@@ -17,9 +17,10 @@
 				<br/>
 				<input type = 'submit' value = 'test2 post'>
 	</form>
+	<a href = 'test3?data1=311&data2=322&data3=333&data3=344'> test3 get</a>
 	<a href = "test4/101/202/303"> test4 - 101 202 303</a>
 	<a href = "test5?data1=101&data2=202&data3=303&data3=304"> test5 - 101 202 303,304</a>
 	<a href = "test6?data1=102&data2=203&data3=304&data3=305"> test6 - 102 203 304,305</a>
-	<a href = "test7?data1=1024"> test7 - 1024</a>
+	<a href = "test7?value1=1024"> test7 - 1024</a>
 </body>
 </html>

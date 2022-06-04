@@ -17,7 +17,7 @@
 	<form:form modelAttribute = "testBean" action = "result">
 		아이디 : <form:input path='id'/> <br/>
 		이름 : <form:input path='name'/> <br/>
-			  <form:button> 확인</form:button>
+			  <form:button> OK</form:button>
 	</form:form>
 </body>
 </html>

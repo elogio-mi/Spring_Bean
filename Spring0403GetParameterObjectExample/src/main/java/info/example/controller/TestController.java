@@ -116,7 +116,7 @@ public class TestController {
 	@GetMapping("/test7")
 	//RequestParam에 required를 통해 값이 주입되지 않을때 null이 주입되게 한다.
 	//		    defaultValue를 통해 값이 주입되지 않을 때 기본값을 설정할 수 있다.
-	public String test7(@RequestParam int data1,
+	public String test7(@RequestParam (value = "value1") int data1,
 						@RequestParam (required = false) String data2,
 						@RequestParam (defaultValue = "0") int data3) {
 		

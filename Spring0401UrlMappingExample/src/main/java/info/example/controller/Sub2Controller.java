@@ -16,6 +16,6 @@ public class Sub2Controller {
 	
 	@RequestMapping(value = "/test6", method = RequestMethod.GET)
 	public String test6() {
-		return "sub/test6";
+		return "sub2/test6";
 	}
 }

@@ -20,7 +20,7 @@ public class TestController {
 	
 	
 	@GetMapping("/test1")
-	//DataBean에서 정의한 변수 : 값을 map 자료형으로 불러온다. List도 배열을 대신하여 사용.
+	//값을 map 자료형으로 불러온다. List도 배열을 대신하여 사용.
 	public String test1(@RequestParam Map<String, String> map, @RequestParam List<String> data3) {
 		
 		String data1 = map.get("data1");
@@ -34,8 +34,6 @@ public class TestController {
 		for(String str : data3) {
 			System.out.printf("str: %s\n",str);
 		}
-		
-		
 		
 		return "result";
 	}
